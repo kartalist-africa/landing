@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kartalist</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <img src="uploads/kartalist logo.svg" alt="Kartalist Logo" class="h-25 w-25 md:h-30 md:w-30 object-contain">
+      <!--<h1 class="text-2xl font-bold text-blue-600">Kartalist</h1>-->
+
+      <!-- Hamburger Button (Mobile Only) -->
+    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+    </button>
+      <nav class="space-x-4 hidden md:flex">
+        <a href="#" class="hover:text-blue-600">Home Page</a>
+        <a href="#" class="hover:text-blue-600">About Us</a>
+        <a href="#" class="hover:text-blue-600">Contact Us</a>
+        <a href="#" class="hover:text-blue-600">Help Center</a>
+        <a href="#" class="hover:text-blue-600">Blog Posts</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Nav Links (Hidden by default) -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-white shadow">
+        <a href="#" class="block text-gray-700 hover:text-blue-600">Home Page</a>
+        <a href="#" class="block text-gray-700 hover:text-blue-600">About Us</a>
+        <a href="#" class="block text-gray-700 hover:text-blue-600">Contact Us</a>
+        <a href="#" class="block text-gray-700 hover:text-blue-600">Help Center</a>
+        <a href="#" class="block text-gray-700 hover:text-blue-600">Blog Posts</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+<section class="relative w-full max-w-7xl mx-auto">
+  <img 
+    src="uploads/hero1.jpg" 
+    alt="Hero Image" 
+    class="w-full h-auto object-cover"
+  />
+  <div 
+    class="absolute inset-x-0 bg-black bg-opacity-50 text-white p-4
+           flex flex-col items-center justify-center
+           md:flex-row md:justify-between md:items-end md:px-12 md:pb-8"
+    style="bottom: 0;"
+  >
+    <h2 class="text-xl md:text-4xl font-bold max-w-lg md:max-w-xs">
+      Buy, Sell, Rent & More, Safely With Escrow
+    </h2>
+    <p class="mt-3 text-sm md:mt-0 md:ml-6 max-w-lg text-center md:text-left text-base md:text-lg">
+      Find what you need, or make money off what you don’t, With the security of escrow to protect your transactions.
+      Join thousands of users buying, selling, and renting every day.
+    </p>
+  </div>
+</section>
+
+
+  <!-- Features Section -->
+  <section class="max-w-7xl mx-auto px-4 py-10">
+    <h3 class="text-2xl font-bold text-center mb-6">Explore Our Key Features for Safe Transactions</h3>
+    <div class="grid md:grid-cols-2 gap-6 items-center">
+      <img src="uploads/rename2.jpg" alt="Safe Transactions" class="rounded-xl">
+      <div>
+        <p class="mb-4">Whether you're selling or wanting to buy clothes, homes, electronics, vehicles, rentals, land, livestock, opportunities, or jobs, Kartalist makes it better by adding escrow to protect your money.</p>
+        <a href="#" class="inline-block bg-red-500 text-white px-4 py-2 rounded-md">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="bg-gray-100 py-10">
+    <h3 class="text-2xl font-bold text-center mb-8">Why Choose Kartalist?</h3>
+    <div class="grid md:grid-cols-5 gap-6 text-center px-4 max-w-6xl mx-auto">
+      <div class="p-4">
+        <h4 class="font-bold mb-2">Free & Easy</h4>
+        <p class="text-sm">Minutes to list, no hidden fees.</p>
+      </div>
+      <div class="p-4">
+        <h4 class="font-bold mb-2">Safe Transactions</h4>
+        <p class="text-sm">Escrow keeps your money safe.</p>
+      </div>
+      <div class="p-4">
+        <h4 class="font-bold mb-2">Escrow for Buyer Protection</h4>
+        <p class="text-sm">Release funds only when satisfied.</p>
+      </div>
+      <div class="p-4">
+        <h4 class="font-bold mb-2">Wide Categories</h4>
+        <p class="text-sm">Cars, jobs, services, etc.</p>
+      </div>
+      <div class="p-4">
+        <h4 class="font-bold mb-2">Secure Messaging</h4>
+        <p class="text-sm">Private & secure chat.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="py-10 px-4 max-w-6xl mx-auto">
+    <h3 class="text-2xl font-bold text-center mb-6">Popular Categories</h3>
+    <div class="grid grid-cols-3 md:grid-cols-5 gap-6 text-center">
+      <div class="bg-white shadow-md p-4 rounded-lg">📦 Jobs</div>
+      <div class="bg-white shadow-md p-4 rounded-lg">📦 Services</div>
+      <div class="bg-white shadow-md p-4 rounded-lg">📦 Real Estate</div>
+      <div class="bg-white shadow-md p-4 rounded-lg">📦 Fashion</div>
+      <div class="bg-white shadow-md p-4 rounded-lg">📦 Gadgets</div>
+      <div class="bg-white shadow-md p-4 rounded-lg">📦 Furniture</div>
+      <div class="bg-white shadow-md p-4 rounded-lg">📦 Pets</div>
+      <div class="bg-white shadow-md p-4 rounded-lg">📦 Cars</div>
+      <div class="bg-white shadow-md p-4 rounded-lg">📦 Electronics</div>
+      <div class="bg-white shadow-md p-4 rounded-lg">📦 Beauty & Cosmetics</div>
+    </div>
+  </section>
+
+  <!-- How Escrow Works -->
+  <section class="py-10 px-4 bg-gray-50">
+    <h3 class="text-2xl font-bold text-center mb-6">How Escrow Works on Kartalist</h3>
+    <ol class="list-decimal list-inside max-w-xl mx-auto text-lg space-y-2">
+      <li>Buyer sends payment to escrow.</li>
+      <li>Seller delivers item/service.</li>
+      <li>Buyer confirms and releases payment.</li>
+      <li>Everyone wins, secure and simple!</li>
+    </ol>
+    <div class="text-center mt-4">
+      <a href="#" class="inline-block bg-pink-600 text-white px-6 py-2 rounded">Join Us</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="py-10 px-4 text-center max-w-4xl mx-auto">
+    <h3 class="text-2xl font-bold mb-4">About Us</h3>
+    <p class="mb-6">Our platform ensures secure transactions through a built-in escrow feature, providing peace of mind for Nigerian buyers and sellers alike.</p>
+    <div class="flex flex-col md:flex-row justify-center gap-6">
+      <div class="bg-red-600 rounded-xl p-6 w-full md:w-1/2 text-white">
+        <h4 class="font-bold text-lg">Mission:</h4>
+        <p class="text-sm">To create a safe, affordable and trustworthy marketplace for online transactions in Nigeria and Africa.</p>
+      </div>
+      <div class="bg-purple-700 rounded-xl p-6 w-full md:w-1/2 text-white">
+        <h4 class="font-bold text-lg">Vision:</h4>
+        <p class="text-sm">To be the biggest, safest and most transparent classified marketplace for Nigeria and Africa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register Form -->
+  <section class="bg-gray-100 py-10 px-4 text-center">
+    <h3 class="text-2xl font-bold mb-4">Join Our Growing Community</h3>
+    <p class="mb-6">Over 100,000+ users are safely buying, selling, and earning every day</p>
+    <form class="bg-white p-6 rounded-lg max-w-md mx-auto shadow-md space-y-4">
+      <input type="text" placeholder="Full Name" class="w-full border rounded px-3 py-2">
+      <input type="email" placeholder="Email" class="w-full border rounded px-3 py-2">
+      <input type="tel" placeholder="Phone" class="w-full border rounded px-3 py-2">
+      <input type="password" placeholder="Password" class="w-full border rounded px-3 py-2">
+      <button type="submit" class="bg-red-500 text-white w-full py-2 rounded">Sign Up Now!</button>
+    </form>
+  </section>
+
+  <!-- App Preview -->
+  <section class="py-10 px-4 text-center">
+    <h3 class="text-2xl font-bold mb-4">Start Buying & Selling with Confidence</h3>
+    <p class="mb-6">Sign up to try out this new classified platform when we launch our beta version.</p>
+    <a href="#" class="inline-block bg-blue-600 text-white px-6 py-2 rounded">Register Now!</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-red-600 to-purple-700 border-t py-6 text-sm text-center text-white space-y-4">
+    <div class="flex flex-col md:flex-row justify-center gap-4 items-center">
+      <div class="flex items-center gap-1">📧 support@kartalist.com</div>
+      <div class="flex items-center gap-1">📞 +234 1234567890</div>
+      <div class="flex items-center gap-1">📍 West Africa, Nigeria.</div>
+    </div>
+    <div class="text-gray-300">©2025 Kartalist. All rights reserved.</div>
+    <div class="space-x-2">
+      <a href="#" class="hover:underline">Privacy Policy</a>
+      <a href="#" class="hover:underline">Terms of Service</a>
+      <a href="#" class="hover:underline">Cookies Settings</a>
+    </div>
+  </footer>
+
+  <!-- Toggle Script -->
+    <script>
+      const toggleBtn = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      toggleBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+</body>
+</html>
